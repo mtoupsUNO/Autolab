@@ -1,3 +1,9 @@
+GIT
+  remote: git://github.com/fulvi0/populator.git
+  revision: cad8067b580f7e84fb3dcd4dabc3e95f6c4519ee
+specs:
+    populator (1.0.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -203,7 +209,6 @@ GEM
       hashery (~> 2.0)
       ruby-rc4
       ttfunk
-    populator (1.0.0)
     prawn (0.13.0)
       afm
       pdf-reader (~> 1.2)

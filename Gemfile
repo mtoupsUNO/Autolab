@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby '2.6.1'
+ruby '2.5.5'
 
 gem 'rails', '=5.2.0'
 
@@ -43,7 +43,7 @@ gem 'exception_notification', ">= 4.1.0"
 
 # Used by lib/tasks/autolab.rake to populate DB with dummy seed data
 gem 'rake', '>=10.3.2'
-gem 'populator', '>=1.0.0'
+gem 'populator', :github=>'fulvi0/populator'
 
 # To communicate with MySQL database
 gem 'mysql2', '~>0.4.10'
@@ -132,3 +132,5 @@ gem 'prawn', '0.13.0'
 gem 'net-ldap'
 
 gem 'sprockets-rails', '>=3.2.1'
+
+gem 'tzinfo-data'
