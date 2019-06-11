@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby '2.5.5'
+ruby '2.6.3'
 
 gem 'rails', '=5.2.0'
 
@@ -17,9 +17,6 @@ gem 'uglifier', '>= 1.3.0'
 
 # Use CoffeeScript for .js.coffee assets and views
 gem 'coffee-rails', '>= 4.0.0'
-
-# See https://github.com/sstephenson/execjs#readme for more supported runtimes
-gem 'mini_racer',  platforms: :ruby
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
@@ -44,9 +41,6 @@ gem 'exception_notification', ">= 4.1.0"
 # Used by lib/tasks/autolab.rake to populate DB with dummy seed data
 gem 'rake', '>=10.3.2'
 gem 'populator', :github=>'fulvi0/populator'
-
-# To communicate with MySQL database
-gem 'mysql2', '~>0.4.10'
 
 # Development server
 gem 'thin'
@@ -87,15 +81,6 @@ gem 'newrelic_rpm'
 gem 'browser-timezone-rails'
 gem 'js_cookie_rails'
 
-# Use ActiveModel has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
-
-# Use unicorn as the app server
-# gem 'unicorn'
-
-# Use Capistrano for deployment
-# gem 'capistrano-rails', group: :development
-
 # Dates and times
 gem 'momentjs-rails', '>= 2.9.0'
 gem 'bootstrap3-datetimepicker-rails', '~> 4.0.0'
@@ -119,7 +104,11 @@ group :development do
 
   # sqlite3 adapter
   gem 'sqlite3', '~> 1.3.6'
+end
 
+group :production do
+  # To communicate with MySQL database
+  gem 'mysql2', '~>0.4.10'
 end
 
 # for PDF annotations

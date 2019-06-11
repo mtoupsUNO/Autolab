@@ -1,0 +1,34 @@
+FROM ruby:2.6-alpine3.9
+
+LABEL maintainer="autolab-dev@andrew.cmu.edu"
+
+# Minimal requirements to run a Rails app
+RUN apk add --no-cache --update build-base \
+                                linux-headers \
+                                git \
+                                tzdata \
+                                sqlite-dev \
+                                nodejs
+
+ENV APP_PATH /home/app/autolab
+
+# Different layer for installation of gems
+WORKDIR $APP_PATH
+ADD Gemfile $APP_PATH
+ADD Gemfile.lock $APP_PATH
+
+RUN bundle install --without production
+
+# Copy application to container
+COPY . $APP_PATH
+COPY ./config/school.yml.template $APP_PATH/config/school.yml
+COPY ./config/database.docker-dev.yml $APP_PATH/config/database.yml
+COPY ./config/autogradeConfig.docker-dev.rb $APP_PATH/config/autogradeConfig.rb
+COPY ./config/initializers/devise.docker-dev.rb $APP_PATH/config/initializers/devise.rb
+
+EXPOSE 3000
+
+RUN ["rails", "db:migrate"]
+
+# -b flag binds IP to 0.0.0.0 instead of localhost so it is accessible from outside
+CMD ["rails", "server", "-b", "0.0.0.0"]
