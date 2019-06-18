@@ -48,7 +48,7 @@ RUN mkdir -p /home/app/webapp/log && \
 # precompile the Rails assets
 WORKDIR /home/app/webapp
 RUN bundle install --system
-RUN RAILS_ENV=production bundle exec rake assets:precompile
+RUN bundle exec rake assets:precompile
 
 # Clean up APT when done.
 RUN apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
