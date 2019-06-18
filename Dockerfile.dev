@@ -28,6 +28,7 @@ COPY ./config/initializers/devise.docker-dev.rb $APP_PATH/config/initializers/de
 
 EXPOSE 3000
 
+RUN bundle install # mt
 RUN ["rails", "db:migrate"]
 
 # -b flag binds IP to 0.0.0.0 instead of localhost so it is accessible from outside
