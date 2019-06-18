@@ -38,6 +38,12 @@ ADD . /home/app/webapp
 
 # Move the database configuration into place
 ADD config/database.docker.yml /home/app/webapp/config/database.yml
+# and other necessary files
+COPY ./config/school.yml.template /home/app/webapp/config/school.yml
+COPY ./config/database.docker-dev.yml /home/app/webapp/config/database.yml
+COPY ./config/autogradeConfig.docker-dev.rb /home/app/webapp/config/autogradeConfig.rb
+COPY ./config/initializers/devise.docker-dev.rb /home/app/webapp/config/initializers/devise.rb
+
 
 # Create the log files
 RUN mkdir -p /home/app/webapp/log && \
