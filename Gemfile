@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '=4.2.1'
+gem 'rails', '=4.2.11.1'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '>= 4.0.3'
@@ -129,3 +129,5 @@ gem 'prawn', '0.13.0'
 gem 'net-ldap'
 
 gem 'sprockets-rails', '2.3.3'
+
+gem 'tzinfo-data'
