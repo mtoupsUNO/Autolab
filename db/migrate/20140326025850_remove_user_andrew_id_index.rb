@@ -1,4 +1,4 @@
-class RemoveUserAndrewIdIndex < ActiveRecord::Migration[4.2]
+class RemoveUserAndrewIdIndex < ActiveRecord::Migration
   def up
     remove_index "course_user_data",  name: "users_andrewID_index"
   end

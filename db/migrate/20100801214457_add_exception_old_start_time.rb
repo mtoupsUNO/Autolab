@@ -1,4 +1,4 @@
-class AddExceptionOldStartTime < ActiveRecord::Migration[4.2]
+class AddExceptionOldStartTime < ActiveRecord::Migration
   def self.up
     add_column :event_exceptions, :original_start_date, :timestamp
   end

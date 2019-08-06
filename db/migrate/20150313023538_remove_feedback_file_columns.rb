@@ -1,4 +1,4 @@
-class RemoveFeedbackFileColumns < ActiveRecord::Migration[4.2]
+class RemoveFeedbackFileColumns < ActiveRecord::Migration
   def change
     change_table :scores do |t|
       t.remove :feedback_file

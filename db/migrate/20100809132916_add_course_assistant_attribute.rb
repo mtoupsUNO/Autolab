@@ -1,4 +1,4 @@
-class AddCourseAssistantAttribute < ActiveRecord::Migration[4.2]
+class AddCourseAssistantAttribute < ActiveRecord::Migration
   def self.up
     add_column :users, :course_assistant, :boolean, :default=>false
   end

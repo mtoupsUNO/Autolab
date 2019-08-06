@@ -1,4 +1,4 @@
-class AddTypeToScoreAdjustments < ActiveRecord::Migration[4.2]
+class AddTypeToScoreAdjustments < ActiveRecord::Migration
   def self.up
     add_column :score_adjustments, :type, :string, :default => "Tweak", :null => false
 

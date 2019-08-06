@@ -1,4 +1,4 @@
-class IncreaseSizeOfFeedbackFile < ActiveRecord::Migration[4.2]
+class IncreaseSizeOfFeedbackFile < ActiveRecord::Migration
   def self.up
     change_column :scores, :feedback_file, :longblob, :null=>true
   end

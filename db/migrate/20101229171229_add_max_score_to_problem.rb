@@ -1,4 +1,4 @@
-class AddMaxScoreToProblem < ActiveRecord::Migration[4.2]
+class AddMaxScoreToProblem < ActiveRecord::Migration
   def self.up
     add_column :problems, :max_score, :float, :default=>0
   end

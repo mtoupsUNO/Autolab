@@ -1,4 +1,4 @@
-class AddDisableHandinToAssessment < ActiveRecord::Migration[4.2]
+class AddDisableHandinToAssessment < ActiveRecord::Migration
   def self.up
     add_column :assessments, :disable_handins, :boolean
   end

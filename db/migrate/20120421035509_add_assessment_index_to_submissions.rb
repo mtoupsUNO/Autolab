@@ -1,4 +1,4 @@
-class AddAssessmentIndexToSubmissions < ActiveRecord::Migration[4.2]
+class AddAssessmentIndexToSubmissions < ActiveRecord::Migration
   def self.up
     add_index :submissions, :assessment_id
   end

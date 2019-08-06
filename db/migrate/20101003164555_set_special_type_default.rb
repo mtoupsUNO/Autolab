@@ -1,4 +1,4 @@
-class SetSpecialTypeDefault < ActiveRecord::Migration[4.2]
+class SetSpecialTypeDefault < ActiveRecord::Migration
   def self.up
     change_column :submissions, :special_type, :integer, :default=>0
     Submission.all.each do |subs|

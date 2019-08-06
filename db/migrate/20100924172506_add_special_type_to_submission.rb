@@ -1,4 +1,4 @@
-class AddSpecialTypeToSubmission < ActiveRecord::Migration[4.2]
+class AddSpecialTypeToSubmission < ActiveRecord::Migration
   def self.up
     add_column :submissions, :special_type, :integer
   end

@@ -1,4 +1,4 @@
-class CreateScoreboardProps < ActiveRecord::Migration[4.2]
+class CreateScoreboardProps < ActiveRecord::Migration
 	def self.up
 		create_table :scoreboard_props do |t|
 			t.integer :assessment_id

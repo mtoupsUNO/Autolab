@@ -1,4 +1,4 @@
-class AddIpToSubmission < ActiveRecord::Migration[4.2]
+class AddIpToSubmission < ActiveRecord::Migration
   def self.up
     add_column :submissions, :submitter_ip, :string, :limit => 40
   end

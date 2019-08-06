@@ -1,4 +1,4 @@
-class RemoveKeyFromGradebookCache < ActiveRecord::Migration[4.2]
+class RemoveKeyFromGradebookCache < ActiveRecord::Migration
   def self.up
     remove_index :gradebook_cache, :key
   end

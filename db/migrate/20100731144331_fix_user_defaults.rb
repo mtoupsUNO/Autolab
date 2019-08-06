@@ -1,4 +1,4 @@
-class FixUserDefaults < ActiveRecord::Migration[4.2]
+class FixUserDefaults < ActiveRecord::Migration
   def self.up
     change_column :users, :first_name, :string, :default=>""
     change_column :users, :last_name, :string, :default=>""

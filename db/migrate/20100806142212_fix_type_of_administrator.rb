@@ -1,7 +1,7 @@
 #I don't know what I was smoking that made me make administrator a string.. it
 #should be boolean
 
-class FixTypeOfAdministrator < ActiveRecord::Migration[4.2]
+class FixTypeOfAdministrator < ActiveRecord::Migration
   def self.up
     change_column :users, :administrator, :boolean, :default=>false
   end

@@ -1,4 +1,4 @@
-class UnignoreAllSubmissions < ActiveRecord::Migration[4.2]
+class UnignoreAllSubmissions < ActiveRecord::Migration
   def self.up
     # backup to ignored_old
     rename_column :submissions, :ignored, :ignored_old

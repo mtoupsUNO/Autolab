@@ -1,4 +1,4 @@
-class ChangeAssignmentToAssessment < ActiveRecord::Migration[4.2]
+class ChangeAssignmentToAssessment < ActiveRecord::Migration
   def self.up
     rename_table :assignments, :assessments
     rename_table :assignment_categories, :assessment_categories

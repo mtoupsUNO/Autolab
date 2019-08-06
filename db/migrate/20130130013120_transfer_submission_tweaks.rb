@@ -1,4 +1,4 @@
-class TransferSubmissionTweaks < ActiveRecord::Migration[4.2]
+class TransferSubmissionTweaks < ActiveRecord::Migration
   def self.up
     rename_column :submissions, :tweak, :tweak_old
     add_column :submissions, :tweak_id, :integer, :null => true, :default => nil

@@ -1,4 +1,4 @@
-class AddHandoutFilenameToAssessment < ActiveRecord::Migration[4.2]
+class AddHandoutFilenameToAssessment < ActiveRecord::Migration
   def self.up
     add_column :assessments, :handout_filename, :string
   end

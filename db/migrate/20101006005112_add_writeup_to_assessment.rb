@@ -1,4 +1,4 @@
-class AddWriteupToAssessment < ActiveRecord::Migration[4.2]
+class AddWriteupToAssessment < ActiveRecord::Migration
   def self.up
     add_column :assessments, :writeup_filename, :string
   end

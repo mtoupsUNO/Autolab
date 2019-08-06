@@ -1,4 +1,4 @@
-class AddDisabledToCourses < ActiveRecord::Migration[4.2]
+class AddDisabledToCourses < ActiveRecord::Migration
   def self.up
     add_column :courses, :disabled, :boolean, {:default=>false}
   end

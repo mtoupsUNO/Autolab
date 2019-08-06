@@ -1,4 +1,4 @@
-class AddHasAutogradeKeyToAssessment < ActiveRecord::Migration[4.2]
+class AddHasAutogradeKeyToAssessment < ActiveRecord::Migration
   def change
     add_column :assessments, :has_autograde, :boolean
     add_column :assessments, :has_partners, :boolean

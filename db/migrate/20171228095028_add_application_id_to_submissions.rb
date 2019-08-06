@@ -1,4 +1,4 @@
-class AddApplicationIdToSubmissions < ActiveRecord::Migration[4.2]
+class AddApplicationIdToSubmissions < ActiveRecord::Migration
   def change
     add_column :submissions, :submitted_by_app_id, :integer
   end

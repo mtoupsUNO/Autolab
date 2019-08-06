@@ -1,4 +1,4 @@
-class PopulateUserFields < ActiveRecord::Migration[4.2]
+class PopulateUserFields < ActiveRecord::Migration
   def up
     User.find_each do |u|
       cuds = u.course_user_data

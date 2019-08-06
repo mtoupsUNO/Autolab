@@ -1,4 +1,4 @@
-class TransferCourseTweaks < ActiveRecord::Migration[4.2]
+class TransferCourseTweaks < ActiveRecord::Migration
   def self.up
     rename_column :courses, :late_penalty, :late_penalty_old
     rename_column :courses, :version_penalty, :version_penalty_old

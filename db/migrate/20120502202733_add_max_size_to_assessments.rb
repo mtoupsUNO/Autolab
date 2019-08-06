@@ -1,4 +1,4 @@
-class AddMaxSizeToAssessments < ActiveRecord::Migration[4.2]
+class AddMaxSizeToAssessments < ActiveRecord::Migration
   def self.up
     add_column :assessments, :max_size, :integer, :default => 2
   end

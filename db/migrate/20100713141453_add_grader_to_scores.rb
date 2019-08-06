@@ -1,4 +1,4 @@
-class AddGraderToScores < ActiveRecord::Migration[4.2]
+class AddGraderToScores < ActiveRecord::Migration
   def self.up
     add_column :scores, :grader_id, :integer
   end

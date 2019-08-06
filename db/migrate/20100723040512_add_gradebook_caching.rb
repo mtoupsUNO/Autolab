@@ -1,4 +1,4 @@
-class AddGradebookCaching < ActiveRecord::Migration[4.2]
+class AddGradebookCaching < ActiveRecord::Migration
   def self.up
     create_table :gradebook_cache, :id=>false do |t|
       t.string :key

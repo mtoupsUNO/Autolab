@@ -1,4 +1,4 @@
-class AddInfiniteToExtension < ActiveRecord::Migration[4.2]
+class AddInfiniteToExtension < ActiveRecord::Migration
   def self.up
     add_column :extensions, :infinite, :boolean,
       :default => false, :null => false

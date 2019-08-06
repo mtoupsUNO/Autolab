@@ -1,4 +1,4 @@
-class AddPerAssessmentLatePenalty < ActiveRecord::Migration[4.2]
+class AddPerAssessmentLatePenalty < ActiveRecord::Migration
   def self.up
     add_column :assessments, :late_penalty, :float
   end

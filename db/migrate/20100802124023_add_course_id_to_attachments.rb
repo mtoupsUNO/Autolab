@@ -1,4 +1,4 @@
-class AddCourseIdToAttachments < ActiveRecord::Migration[4.2]
+class AddCourseIdToAttachments < ActiveRecord::Migration
   def self.up
     add_column :attachments, :course_id, :integer
   end

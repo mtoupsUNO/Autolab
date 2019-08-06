@@ -1,4 +1,4 @@
-class AddDisplayNameToCourse < ActiveRecord::Migration[4.2]
+class AddDisplayNameToCourse < ActiveRecord::Migration
   def self.up
     add_column :courses, :display_name, :string
   end

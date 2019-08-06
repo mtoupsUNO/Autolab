@@ -1,4 +1,4 @@
-class AddSubmittedByToSubmission < ActiveRecord::Migration[4.2]
+class AddSubmittedByToSubmission < ActiveRecord::Migration
   def self.up
     add_column :submissions, :submitted_by_id, :integer 
   end

@@ -1,4 +1,4 @@
-class RenameInformationTable < ActiveRecord::Migration[4.2]
+class RenameInformationTable < ActiveRecord::Migration
   def self.up
     rename_table :event_information, :event_informations
   end

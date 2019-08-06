@@ -1,4 +1,4 @@
-class AddDetectedMimeTypeToSubmissions < ActiveRecord::Migration[4.2]
+class AddDetectedMimeTypeToSubmissions < ActiveRecord::Migration
   def self.up
     add_column :submissions, :detected_mime_type, :string
   end

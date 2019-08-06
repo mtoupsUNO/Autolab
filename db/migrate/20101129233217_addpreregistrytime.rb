@@ -1,4 +1,4 @@
-class Addpreregistrytime < ActiveRecord::Migration[4.2]
+class Addpreregistrytime < ActiveRecord::Migration
   def self.up
     add_column :meetings, :preregistry_time, :integer
   end

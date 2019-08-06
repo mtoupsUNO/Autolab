@@ -1,4 +1,4 @@
-class AddTextfieldsToAssessments < ActiveRecord::Migration[4.2]
+class AddTextfieldsToAssessments < ActiveRecord::Migration
   def up
       add_column :assessments, :textfields, :text
   end

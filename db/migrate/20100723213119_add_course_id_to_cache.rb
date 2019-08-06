@@ -1,4 +1,4 @@
-class AddCourseIdToCache < ActiveRecord::Migration[4.2]
+class AddCourseIdToCache < ActiveRecord::Migration
   def self.up
     add_column :gradebook_cache, :course_id, :integer
   end

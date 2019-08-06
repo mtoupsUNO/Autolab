@@ -1,4 +1,4 @@
-class AddCategoryIdToEvent < ActiveRecord::Migration[4.2]
+class AddCategoryIdToEvent < ActiveRecord::Migration
   def self.up
     add_column :events, :category_id, :integer
   end

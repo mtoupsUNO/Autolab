@@ -1,4 +1,4 @@
-class PrepareExternalAuth < ActiveRecord::Migration[4.2]
+class PrepareExternalAuth < ActiveRecord::Migration
   def up
     # rename old :users table to :course_user_data table
     rename_table :users, :course_user_data

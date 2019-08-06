@@ -1,4 +1,4 @@
-class CreateAnnouncements < ActiveRecord::Migration[4.2]
+class CreateAnnouncements < ActiveRecord::Migration
   def self.up
     create_table :announcements do |t|
       t.string :title

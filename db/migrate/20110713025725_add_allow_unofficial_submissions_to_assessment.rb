@@ -1,4 +1,4 @@
-class AddAllowUnofficialSubmissionsToAssessment < ActiveRecord::Migration[4.2]
+class AddAllowUnofficialSubmissionsToAssessment < ActiveRecord::Migration
   def self.up
     add_column :assessments, :allow_unofficial, :boolean
   end

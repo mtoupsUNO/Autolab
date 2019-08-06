@@ -1,4 +1,4 @@
-class AddCategories < ActiveRecord::Migration[4.2]
+class AddCategories < ActiveRecord::Migration
   def self.up
     remove_column :assignments, :category
     add_column :assignments, :category_id, :integer

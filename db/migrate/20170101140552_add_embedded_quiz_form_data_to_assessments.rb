@@ -1,4 +1,4 @@
-class AddEmbeddedQuizFormDataToAssessments < ActiveRecord::Migration[4.2]
+class AddEmbeddedQuizFormDataToAssessments < ActiveRecord::Migration
   def change
   	 add_column :assessments, :embedded_quiz_form_data, :text
   end

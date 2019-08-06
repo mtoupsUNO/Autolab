@@ -1,4 +1,4 @@
-class CreateExtensions < ActiveRecord::Migration[4.2]
+class CreateExtensions < ActiveRecord::Migration
   def self.up
     create_table :extensions do |t|
       t.references :user

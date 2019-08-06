@@ -1,4 +1,4 @@
-class AddCourseId < ActiveRecord::Migration[4.2]
+class AddCourseId < ActiveRecord::Migration
   def self.up
     add_column :assignments, :course_id , :integer
   end

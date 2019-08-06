@@ -1,4 +1,4 @@
-class CreateOauthDeviceFlowTables < ActiveRecord::Migration[4.2]
+class CreateOauthDeviceFlowTables < ActiveRecord::Migration
   def change
     create_table :oauth_device_flow_requests do |t|
       t.references :application,     null: false

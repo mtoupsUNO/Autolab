@@ -1,4 +1,4 @@
-class AddTweakTypeToUsers < ActiveRecord::Migration[4.2]
+class AddTweakTypeToUsers < ActiveRecord::Migration
   def self.up
   add_column :users, :absolute_tweak, :boolean, { :default => true, :null => false }
 

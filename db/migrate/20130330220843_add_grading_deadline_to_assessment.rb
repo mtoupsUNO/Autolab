@@ -1,4 +1,4 @@
-class AddGradingDeadlineToAssessment < ActiveRecord::Migration[4.2]
+class AddGradingDeadlineToAssessment < ActiveRecord::Migration
   def self.up
     add_column :assessments, :grading_deadline, :datetime
     change_column :assessments, :grading_deadline, :datetime, :null => false

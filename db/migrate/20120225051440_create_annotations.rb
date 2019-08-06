@@ -1,4 +1,4 @@
-class CreateAnnotations < ActiveRecord::Migration[4.2]
+class CreateAnnotations < ActiveRecord::Migration
   def self.up
     create_table :annotations do |t|
       t.integer :submission_id

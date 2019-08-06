@@ -1,4 +1,4 @@
-class AddTweakTypeToSubmissions < ActiveRecord::Migration[4.2]
+class AddTweakTypeToSubmissions < ActiveRecord::Migration
   def self.up
   add_column :submissions, :absolute_tweak, :boolean, { :default => true, :null => false }
 

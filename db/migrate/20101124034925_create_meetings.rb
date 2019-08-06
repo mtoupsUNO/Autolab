@@ -1,4 +1,4 @@
-class CreateMeetings < ActiveRecord::Migration[4.2]
+class CreateMeetings < ActiveRecord::Migration
   def self.up
     create_table :meetings do |t|
       t.references :course

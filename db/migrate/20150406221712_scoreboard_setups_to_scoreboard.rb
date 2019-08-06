@@ -1,4 +1,4 @@
-class ScoreboardSetupsToScoreboard < ActiveRecord::Migration[4.2]
+class ScoreboardSetupsToScoreboard < ActiveRecord::Migration
   def change
     rename_table :scoreboard_setups, :scoreboards
     change_column :scoreboards, :banner, :text, limit: 65535

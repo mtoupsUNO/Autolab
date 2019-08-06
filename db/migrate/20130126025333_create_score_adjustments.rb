@@ -1,4 +1,4 @@
-class CreateScoreAdjustments < ActiveRecord::Migration[4.2]
+class CreateScoreAdjustments < ActiveRecord::Migration
   def self.up
     create_table :score_adjustments do |t|
 	  t.integer :kind, :null => false

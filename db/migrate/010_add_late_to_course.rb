@@ -1,4 +1,4 @@
-class AddLateToCourse < ActiveRecord::Migration[4.2]
+class AddLateToCourse < ActiveRecord::Migration
   def self.up
     add_column :courses, :late_slack, :integer
     add_column :courses, :grace_days, :integer

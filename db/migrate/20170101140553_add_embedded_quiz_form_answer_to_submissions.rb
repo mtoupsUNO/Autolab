@@ -1,4 +1,4 @@
-class AddEmbeddedQuizFormAnswerToSubmissions < ActiveRecord::Migration[4.2]
+class AddEmbeddedQuizFormAnswerToSubmissions < ActiveRecord::Migration
   def change
   	 add_column :submissions, :embedded_quiz_form_answer, :text
   end

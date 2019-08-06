@@ -1,4 +1,4 @@
-class AddMaxLateDaysToAssessment < ActiveRecord::Migration[4.2]
+class AddMaxLateDaysToAssessment < ActiveRecord::Migration
   def self.up
     add_column :assessments, :max_grace_days, :integer 
   end

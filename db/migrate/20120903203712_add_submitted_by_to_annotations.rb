@@ -1,4 +1,4 @@
-class AddSubmittedByToAnnotations < ActiveRecord::Migration[4.2]
+class AddSubmittedByToAnnotations < ActiveRecord::Migration
   def self.up
     add_column :annotations, :submitted_by, :string
   end

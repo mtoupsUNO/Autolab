@@ -1,4 +1,4 @@
-class CreateAutogradeProps < ActiveRecord::Migration[4.2]
+class CreateAutogradeProps < ActiveRecord::Migration
 	def self.up
 		create_table :autograde_props do |t|
 			t.integer :assessment_id

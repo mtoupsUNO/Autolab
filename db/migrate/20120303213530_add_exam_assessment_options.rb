@@ -1,4 +1,4 @@
-class AddExamAssessmentOptions < ActiveRecord::Migration[4.2]
+class AddExamAssessmentOptions < ActiveRecord::Migration
   def self.up
     change_table :assessments do |t|
         t.boolean :exam, :default => false

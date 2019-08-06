@@ -1,4 +1,4 @@
-class AddOptionalToProblems < ActiveRecord::Migration[4.2]
+class AddOptionalToProblems < ActiveRecord::Migration
   def self.up
     add_column :problems, :optional, :boolean, :default => false
   end

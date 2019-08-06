@@ -1,4 +1,4 @@
-class AddModuleTable < ActiveRecord::Migration[4.2]
+class AddModuleTable < ActiveRecord::Migration
   def self.up
     create_table :module_data do |t|
       t.references :field

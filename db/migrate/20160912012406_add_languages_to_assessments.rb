@@ -1,4 +1,4 @@
-class AddLanguagesToAssessments < ActiveRecord::Migration[4.2]
+class AddLanguagesToAssessments < ActiveRecord::Migration
   def up
       add_column :assessments, :languages, :text
   end

@@ -1,4 +1,4 @@
-class ChangeNotesPointsToTweak < ActiveRecord::Migration[4.2]
+class ChangeNotesPointsToTweak < ActiveRecord::Migration
   def self.up
     rename_column :submissions, :notes_points, :tweak
     change_column :submissions, :tweak, :float, :default=>0

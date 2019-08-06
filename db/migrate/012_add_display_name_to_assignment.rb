@@ -1,4 +1,4 @@
-class AddDisplayNameToAssignment < ActiveRecord::Migration[4.2]
+class AddDisplayNameToAssignment < ActiveRecord::Migration
   def self.up
     add_column :assignments, :display_name, :string
   end

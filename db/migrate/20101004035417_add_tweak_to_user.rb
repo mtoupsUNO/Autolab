@@ -1,4 +1,4 @@
-class AddTweakToUser < ActiveRecord::Migration[4.2]
+class AddTweakToUser < ActiveRecord::Migration
   def self.up
     add_column :users, :tweak, :float, :default=>0, :null=>false
   end
