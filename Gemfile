@@ -131,3 +131,5 @@ gem 'net-ldap'
 gem 'sprockets-rails', '2.3.3'
 
 gem 'tzinfo-data'
+
+gem 'ffi-libarchive'

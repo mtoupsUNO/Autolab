@@ -11,6 +11,9 @@ FROM phusion/passenger-ruby24
 
 MAINTAINER Autolab Development Team "autolab-dev@andrew.cmu.edu"
 
+# this line is for the ffi-libarchive gem -mt
+RUN apt-get update && apt-get install libarchive13
+
 # Set correct environment variables.
 ENV HOME /root
 
