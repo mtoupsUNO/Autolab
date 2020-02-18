@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
+ruby '2.6.3'
 
 gem 'rails', '=5.2.0'
 
@@ -17,11 +18,14 @@ gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .js.coffee assets and views
 gem 'coffee-rails', '>= 4.0.0'
 
+# See https://github.com/sstephenson/execjs#readme for more supported runtimes
+gem 'mini_racer',  platforms: :ruby
+
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
-gem 'turbolinks'
+gem 'turbolinks', '~> 5.2.0'
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '>= 2.0'
@@ -39,7 +43,10 @@ gem 'exception_notification', ">= 4.1.0"
 
 # Used by lib/tasks/autolab.rake to populate DB with dummy seed data
 gem 'rake', '>=10.3.2'
-gem 'populator', :github=>'fulvi0/populator'
+gem 'populator', '>=1.0.0'
+
+# To communicate with MySQL database
+gem 'mysql2', '~>0.4.10'
 
 # Development server
 gem 'thin'
@@ -92,9 +99,6 @@ group :development do
   gem 'better_errors'
   gem 'binding_of_caller' # enhances better_errors
 
-  # Useful debugger
-  gem 'byebug', '>=3.5.1'
-
   # static code analyzer
   gem 'rubocop', require: false
 
@@ -105,10 +109,8 @@ group :development do
   gem 'sqlite3', '~> 1.3.6'
 end
 
-group :production do
-  # To communicate with MySQL database
-  gem 'mysql2', '~>0.4.10'
-end
+# Useful debugger
+gem 'byebug', '>=3.5.1'
 
 # for PDF annotations
 # This is an outdate version however support for

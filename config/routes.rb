@@ -42,7 +42,7 @@ Rails.application.routes.draw do
   get "contact", to: "home#contact"
 
   namespace :home do
-    if Rails.env == "development"
+    if Rails.env == "development" || Rails.env == "test"
       match "developer_login", via: [:get, :post]
     end
     get "error"
@@ -105,7 +105,6 @@ Rails.application.routes.draw do
         member do
           get "destroyConfirm"
           get "download"
-          get "listArchive", as: :list_archive
           get "view"
         end
 

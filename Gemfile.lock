@@ -209,6 +209,7 @@ GEM
       hashery (~> 2.0)
       ruby-rc4
       ttfunk
+    populator (1.0.0)
     prawn (0.13.0)
       afm
       pdf-reader (~> 1.2)
@@ -393,10 +394,13 @@ DEPENDENCIES
   sprockets-rails (>= 3.2.1)
   sqlite3 (~> 1.3.6)
   thin
-  turbolinks
+  turbolinks (~> 5.2.0)
   uglifier (>= 1.3.0)
   webmock
   yard
+
+RUBY VERSION
+   ruby 2.6.3p62
 
 BUNDLED WITH
    1.17.2
