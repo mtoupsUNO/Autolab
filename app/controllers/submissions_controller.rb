@@ -187,7 +187,7 @@ class SubmissionsController < ApplicationController
 
     send_data(result.read, # to read from stringIO object returned by create_zip
               type: "application/zip",
-              disposition: "inline",
+              disposition: "attachment", # tell browser to download
               filename: "#{@course.name}_#{@course.semester}_#{@assessment.name}_submissions.zip") && return
   end
 
